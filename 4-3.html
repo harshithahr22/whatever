@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html public "-//w3c//dtd xtml 1.1//EN" http://www.w3.org/TR/xhtml11/dtd/xhtml11.dtd>
+<html xml="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        Number Input with Prompt
+    </title>
+    <script type = "text/javascript">
+
+  <!--
+
+    var total;
+    var inputNumber;
+    var value;
+    var highestNumber = [];
+    total = 0;
+    inputNumber = 1;
+
+    while ( inputNumber <= 3 ){
+
+      value = window.prompt( "Enter number " + inputNumber + " of 3:" , "" );
+
+      while(isNaN(parseInt( value ))){
+       value = window.prompt( "Enter number " + inputNumber + " of 3:" , "" );
+      }
+
+      highestNumber[inputNumber] = value;
+
+      total = total + value;
+
+      inputNumber = inputNumber + 1;
+
+    }
+    document.writeln("The numbers are: "+highestNumber[1]+" , "+highestNumber[2]+" , "+highestNumber[3]);
+
+    finalMax = Math.max(highestNumber[1], highestNumber[2], highestNumber[3]);
+
+    document.writeln(
+         "<h1>The highest number is " + finalMax + "</h1>" );
+</script>
+</head>
+<body>
+</body>
+</html>

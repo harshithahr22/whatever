@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html public "-//w3c//dtd xtml 1.1//EN" http://www.w3.org/TR/xhtml11/dtd/xhtml11.dtd>
+<html xml="http://www.w3.org/1999/xhtml">
+<head>
+<title> fibonacci.html </title>
+</head>
+<body>
+<h3 style="text-align:center; color:black"> Program to generate the Fibonacci Series </h3>
+<script type="text/javascript">
+
+var num = 20
+var f1=0;
+var f2=1;
+document.write("The fibonacci series : ");
+document.write(" ",f1,",");
+document.write(" ",f2,",");
+ 
+var i,f3;
+for(i=2; i<num; i++)
+{
+	 f3=f1+f2;
+	 document.write(" ",f3,",");
+	 f1=f2;
+	 f2=f3;
+}
+
+</script>
+</body>
+</html>

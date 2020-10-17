@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html public "-//w3c//dtd xtml 1.1//EN" http://www.w3.org/TR/xhtml11/dtd/xhtml11.dtd>
+<html xml="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+    window.onload = function () {
+        document.getElementById("btn_alert").onclick = alertTable;
+};
+
+
+function alertTable() {
+    var output = "";
+    for (var i = 5; i <=15; i++) {
+        output += i + "  " + i*i + "  " + i*i*i + "\n";
+    }
+    alert(output);
+}
+        
+
+</script>
+<input type="button" id="btn_alert" value="Alert It" />
+
+<div id="results"></div>
+</body>
+</html>
